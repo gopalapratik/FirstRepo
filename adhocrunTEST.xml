@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite"
+	thread-count="1" verbose="3">
+	<test name="Test on Chrome">
+		<parameter name="browser" value="Internet Explorer" />
+		<parameter name="environment" value="Test 1" />
+		<parameter name="clientName" value="CAP" />
+		<method-selectors>
+			<method-selector>
+				<script language="beanshell"><![CDATA[return groups.containsKey("Business Administration") && groups.containsKey("Sanity") && groups.containsKey("CAP") || groups.containsKey("Product") && groups.containsKey("Regression") && groups.containsKey("CAP") || groups.containsKey("Credit Control Policy") && groups.containsKey("Regression") && groups.containsKey("CAP") || groups.containsKey("Staff") && groups.containsKey("Sanity") && groups.containsKey("CAP") || groups.containsKey("Finance") && groups.containsKey("Regression") && groups.containsKey("CAP") || groups.containsKey("Customer") && groups.containsKey("Regression") && groups.containsKey("CAP") || groups.containsKey("Organisation") && groups.containsKey("Regression") && groups.containsKey("CAP");]]></script>
+			</method-selector>
+		</method-selectors>
+		<classes>
+		    
+		   
+	
+			 <class name="testscripts.cap.CAPSetupBulkCustomerTransferScripts" />
+			<class name="testscripts.cap.CAPSearchBulkCustomerTransferScripts" />
+		
+		
+		
+		
+		
+		</classes>
+	</test>
+</suite>

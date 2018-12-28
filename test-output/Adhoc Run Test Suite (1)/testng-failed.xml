@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Adhoc Run Test Suite (1)]">
+  <parameter name="environment" value="Test 1"/>
+  <parameter name="clientName" value="CAP"/>
+  <parameter name="browser" value="Internet Explorer"/>
+  <test name="Test on Internet Explorer(failed)">
+    <method-selectors>
+      <method-selector>
+        <script language="BeanShell">
+          <![CDATA[return groups.containsKey("Product") && groups.containsKey("Regression") && groups.containsKey("CAP");]]>
+        </script>
+      </method-selector>
+    </method-selectors>
+    <parameter name="environment" value="Test 1"/>
+    <parameter name="clientName" value="CAP"/>
+    <parameter name="browser" value="Internet Explorer"/>
+    <classes>
+      <class name="testscripts.cap.CAPProductPartnerListScripts">
+        <methods>
+          <include name="ProductPartnerListTC57" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="quit"/>
+          <include name="ProductPartnerListTC56" invocation-numbers="0"/>
+          <include name="ProductPartnerListTC55" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testscripts.cap.CAPProductPartnerListScripts -->
+      <class name="testscripts.cap.CAPSetupProductScripts">
+        <methods>
+          <include name="setup"/>
+          <include name="RollbackDatabase"/>
+          <include name="SetupProductTC53" invocation-numbers="0"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testscripts.cap.CAPSetupProductScripts -->
+      <class name="testscripts.cap.CAPListProductScripts">
+        <methods>
+          <include name="ListProductTC54" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testscripts.cap.CAPListProductScripts -->
+    </classes>
+  </test> <!-- Test on Internet Explorer(failed) -->
+</suite> <!-- Failed suite [Adhoc Run Test Suite (1)] -->

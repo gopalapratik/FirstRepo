@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite"
+	thread-count="1" verbose="3">
+	<test name="Test on Internet Explorer">
+		<parameter name="browser" value="Internet Explorer" />
+		<parameter name="environment" value="Test 1" />
+		<parameter name="clientName" value="CAP" />
+		<method-selectors>
+			<method-selector>
+				<script language="beanshell"><![CDATA[return groups.containsKey("Customer") && groups.containsKey("Sanity") && groups.containsKey("CAP");]]></script>
+			</method-selector>
+		</method-selectors>
+		<classes>
+		<class name="testscripts.cap.CAPCardPayment_CustomerServiceScripts" />
+			<class name="testscripts.cap.CAPSetupCustomerScripts" />
+			<class name="testscripts.cap.CAPSearchCustTransactionScripts" />
+			<class name="testscripts.cap.CAPSearchBulkCustomerTransferScripts" />
+			<class name="testscripts.cap.CAPViewLeadsScripts" />
+			
+			<class name="testscripts.cap.CAPLettersEventlogstabScripts" />
+			
+			<class name="testscripts.cap.CAPSearchCustStatementScripts" />
+			
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Adhoc Run Test Suite"
+       thread-count="1" verbose="3">
+       <test name="Test on Android Mobile">
+              <parameter name="browser" value="Android" />
+              <parameter name="environment" value="Test 1" />
+              <parameter name="clientName" value="MAP" />
+              <method-selectors>
+                     <method-selector>
+                           <script language="beanshell"><![CDATA[return groups.containsKey("LogIN") && groups.containsKey("Regression") && groups.containsKey("MAP");]]></script>
+                     </method-selector>
+              </method-selectors>
+              <classes>
+                     <class name="testscripts.map.MAPLogINScripts"/>      
+              </classes>
+       </test>
+</suite>

@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>TestNG:  Test on Chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test on Chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 05 18:54:02 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>901 seconds (901551 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testscripts.cap.CAPSearchBulkCustomerTransferScripts.verifyAmendBCTRequestScript()'><b>verifyAmendBCTRequestScript</b><br>Test class: testscripts.cap.CAPSearchBulkCustomerTransferScripts<br>Parameters: Test 1, CAP<br/>
+<a href="#Output-1346799731" onClick='toggleBox("Output-1346799731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1346799731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1346799731">
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Verifying Search Customer page displayed with header : Search Customer<br/>
+Verifying Customers should get added and confirmation message should be displayed like : Customers added to the list. Please click Submit Request button to save the changes. <br/>
+Verifying Bulk customer transfer request has been raised successfully : Bulk Customer Transfer Request added successfully, Transfer Request id : 297 <br/>
+Verifying Search Bulk Customer Transfer page displayed with header : Search Bulk Customer Transfer Requests<br/>
+Verifying searched transfer request should be matched with Raised Customer Transfer Request ID : 297<br/>
+Verifying status of transfer request is should be Pending<br/>
+Verifying View Bulk Customer Transfer page displayed with header : View Bulk Customer Transfer Request<br/>
+Verifying Amend Bulk Customer Transfer page displayed with header : Amend Bulk Customer Transfer Request<br/>
+Verifying Search Customer page displayed with header : Search Customer<br/>
+Verifying Customers selected should be ticked and displayed a message : You have selected 2 customer(s).<br/>
+Verifying Amend Bulk Customer Transfer page displayed with header : Amend Bulk Customer Transfer Request<br/>
+Verifying Customers should get added and confirmation message should be displayed like : Customers added to the list. Please click Submit Request button to save the changes. <br/>
+Verifying Source Territory text field of BCT Request will be disabled.<br/>
+Verifying Bulk customer transfer request has been updated successfully : Bulk Customer Transfer Request updated successfully. <br/>
+Verifying Destination Territory should be same as selected territory : 0180<br/>
+Verifying Effective Monday Date should be same as selected date : 10/12/2018<br/>
+Verifying searched transfer request should be matched with Raised Customer Transfer Request ID : 297<br/>
+Verifying status of transfer request is should be Complete<br/>
+By default Search Customer page is displayed<br/>
+Verifying after succesfully bulk customer transfer, updated territiry should be displayed for selected customer and updated territory is 0180<br/>
+</div>
+</td>
+<td></td>
+<td>140</td>
+<td>testscripts.cap.CAPSearchBulkCustomerTransferScripts@436e852b</td></tr>
+<tr>
+<td title='testscripts.cap.CAPSearchBulkCustomerTransferScripts.verifyBCTByChangingDifferentDestinationTerritory()'><b>verifyBCTByChangingDifferentDestinationTerritory</b><br>Test class: testscripts.cap.CAPSearchBulkCustomerTransferScripts<br>Parameters: Test 1, CAP<br/>
+<a href="#Output-1660325375" onClick='toggleBox("Output-1660325375", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1660325375" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1660325375">
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Verifying Search Customer page displayed with header : Search Customer<br/>
+Verifying Customers should get added and confirmation message should be displayed like : Customers added to the list. Please click Submit Request button to save the changes. <br/>
+Verifying Bulk customer transfer request has been raised successfully : Bulk Customer Transfer Request added successfully, Transfer Request id : 298 <br/>
+Verifying Search Bulk Customer Transfer page displayed with header : Search Bulk Customer Transfer Requests<br/>
+Verifying searched transfer request should be matched with Raised Customer Transfer Request ID : 298<br/>
+Verifying status of transfer request is should be Pending<br/>
+Verifying View Bulk Customer Transfer page displayed with header : View Bulk Customer Transfer Request<br/>
+By default Search Customer page is displayed<br/>
+Verifying Source Territory of searched Customer should be same as selected under BCT request<br/>
+Verifying Customers details should get update and message will be displayed like : Action completed successfully. <br/>
+Verifying searched transfer request should be matched with Raised Customer Transfer Request ID : 298<br/>
+Verifying status of transfer request is should be Complete<br/>
+Verifying status of transfer request for specified customer id '17628272' should be Ignored<br/>
+</div>
+</td>
+<td></td>
+<td>141</td>
+<td>testscripts.cap.CAPSearchBulkCustomerTransferScripts@436e852b</td></tr>
+<tr>
+<td title='testscripts.cap.CAPSearchBulkCustomerTransferScripts.verifyBCTByChangingSameDestinationTerritory()'><b>verifyBCTByChangingSameDestinationTerritory</b><br>Test class: testscripts.cap.CAPSearchBulkCustomerTransferScripts<br>Parameters: Test 1, CAP<br/>
+<a href="#Output-1667534569" onClick='toggleBox("Output-1667534569", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1667534569" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1667534569">
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Verifying Search Customer page displayed with header : Search Customer<br/>
+Verifying Customers should get added and confirmation message should be displayed like : Customers added to the list. Please click Submit Request button to save the changes. <br/>
+Verifying Bulk customer transfer request has been raised successfully : Bulk Customer Transfer Request added successfully, Transfer Request id : 299 <br/>
+Verifying Search Bulk Customer Transfer page displayed with header : Search Bulk Customer Transfer Requests<br/>
+Verifying searched transfer request should be matched with Raised Customer Transfer Request ID : 299<br/>
+Verifying status of transfer request is should be Pending<br/>
+Verifying View Bulk Customer Transfer page displayed with header : View Bulk Customer Transfer Request<br/>
+By default Search Customer page is displayed<br/>
+Verifying Source Territory of searched Customer should be same as selected under BCT request<br/>
+Verifying Customers details should get update and message will be displayed like : Action completed successfully. <br/>
+Verifying searched transfer request should be matched with Raised Customer Transfer Request ID : 299<br/>
+Verifying status of transfer request is should be Complete<br/>
+Verifying status of transfer request for specified customer id '17787537' should be Ignored<br/>
+</div>
+</td>
+<td></td>
+<td>154</td>
+<td>testscripts.cap.CAPSearchBulkCustomerTransferScripts@436e852b</td></tr>
+<tr>
+<td title='testscripts.cap.CAPSetupBulkCustomerTransferScripts.verifyBCTWhenSrcAndDestTerritoryIsSame()'><b>verifyBCTWhenSrcAndDestTerritoryIsSame</b><br>Test class: testscripts.cap.CAPSetupBulkCustomerTransferScripts<br>Parameters: Test 1, CAP<br/>
+<a href="#Output-210506412" onClick='toggleBox("Output-210506412", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-210506412" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-210506412">
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Search Territory Screen displayed with header: Search Territory Result<br/>
+Selected Territory should be displayed under Source Territory TextBox<br/>
+Verifying error message when Source & Destination territory is same & message is : Source and destination territory must be different.<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>testscripts.cap.CAPSetupBulkCustomerTransferScripts@27808f31</td></tr>
+<tr>
+<td title='testscripts.cap.CAPSearchBulkCustomerTransferScripts.verifyCancelBCTRequest()'><b>verifyCancelBCTRequest</b><br>Test class: testscripts.cap.CAPSearchBulkCustomerTransferScripts<br>Parameters: Test 1, CAP<br/>
+<a href="#Output-1059300256" onClick='toggleBox("Output-1059300256", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1059300256" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1059300256">
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Verifying Search Customer page displayed with header : Search Customer<br/>
+Verifying Customers should get added and confirmation message should be displayed like : Customers added to the list. Please click Submit Request button to save the changes. <br/>
+Verifying Bulk customer transfer request has been raised successfully : Bulk Customer Transfer Request added successfully, Transfer Request id : 300 <br/>
+Verifying Search Bulk Customer Transfer page displayed with header : Search Bulk Customer Transfer Requests<br/>
+Verifying searched transfer request should be matched with Raised Customer Transfer Request ID : 300<br/>
+Verifying status of transfer request is should be Pending<br/>
+Verifying View Bulk Customer Transfer page displayed with header : View Bulk Customer Transfer Request<br/>
+Verifying Bulk customer transfer request has been Cancelled successfully and message will be displayed as : Bulk Customer Transfer Request(s) cancelled successfully. <br/>
+Verifying Transfer Status of selected customer should be Cancelled<br/>
+Verifying Transfer Status of selected customer should be Cancelled<br/>
+Verifying Transfer Status of selected customer should be Cancelled<br/>
+Verifying Transfer Status of selected customer should be Cancelled<br/>
+Verifying Transfer Status of selected customer should be Cancelled<br/>
+Verifying select checkbox for the BCT Request will be disabled.<br/>
+</div>
+</td>
+<td></td>
+<td>88</td>
+<td>testscripts.cap.CAPSearchBulkCustomerTransferScripts@436e852b</td></tr>
+<tr>
+<td title='testscripts.cap.CAPSetupBulkCustomerTransferScripts.verifyCreateBCTRequest()'><b>verifyCreateBCTRequest</b><br>Test class: testscripts.cap.CAPSetupBulkCustomerTransferScripts<br>Parameters: Test 1, CAP<br/>
+<a href="#Output-1045997582" onClick='toggleBox("Output-1045997582", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1045997582" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1045997582">
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Verifying Search Customer page displayed with header : Search Customer<br/>
+Verifying Customers selected should be ticked and displayed a message : You have selected 2 customer(s).<br/>
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Verifying Customers should get added and confirmation message should be displayed like : Customers added to the list. Please click Submit Request button to save the changes. <br/>
+Verifying Selected Date should be displayed under Effective Date text box and Effective Monday Date is : 12/11/2018<br/>
+Verifying Bulk customer transfer request has been raised successfully : Bulk Customer Transfer Request added successfully, Transfer Request id : 295 <br/>
+</div>
+</td>
+<td></td>
+<td>106</td>
+<td>testscripts.cap.CAPSetupBulkCustomerTransferScripts@27808f31</td></tr>
+<tr>
+<td title='testscripts.cap.CAPSetupBulkCustomerTransferScripts.verifyRemoveCustomersFromBCTRequest()'><b>verifyRemoveCustomersFromBCTRequest</b><br>Test class: testscripts.cap.CAPSetupBulkCustomerTransferScripts<br>Parameters: Test 1, CAP<br/>
+<a href="#Output-195228908" onClick='toggleBox("Output-195228908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-195228908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-195228908">
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Verifying Search Customer page displayed with header : Search Customer<br/>
+Verifying Customers selected should be ticked and displayed a message : You have selected 4 customer(s).<br/>
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Verifying Customers should get added and confirmation message should be displayed like : Customers added to the list. Please click Submit Request button to save the changes. <br/>
+Verifying Customers should get removed and confirmation message should be displayed like : Customers removed from the list. Please click Submit Request button to save the changes. <br/>
+Verifying please add customer confirmation message should be displayed like : Please add customers to the list.<br/>
+Verifying Customers selected should be ticked and displayed a message : You have selected 4 customer(s).<br/>
+Verifying Setup Bulk Customer Transfer page displayed with header : Setup Bulk Customer Transfer Request<br/>
+Verifying Customers should get added and confirmation message should be displayed like : Customers added to the list. Please click Submit Request button to save the changes. <br/>
+Verifying Bulk customer transfer request has been raised successfully : Bulk Customer Transfer Request added successfully, Transfer Request id : 296 <br/>
+</div>
+</td>
+<td></td>
+<td>124</td>
+<td>testscripts.cap.CAPSetupBulkCustomerTransferScripts@27808f31</td></tr>
+<tr>
+<td title='testscripts.cap.CAPSetupBulkCustomerTransferScripts.verifySearchAndPerformBCTRequest()'><b>verifySearchAndPerformBCTRequest</b><br>Test class: testscripts.cap.CAPSetupBulkCustomerTransferScripts<br>Parameters: Test 1, CAP<br/>
+<a href="#Output-1033638837" onClick='toggleBox("Output-1033638837", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1033638837" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1033638837">
+Verifying Search Bulk Customer Transfer page displayed with header : Search Bulk Customer Transfer Requests<br/>
+Verifying searched transfer request should be matched with Raised Customer Transfer Request ID : 295<br/>
+Verifying status of transfer request is should be Pending<br/>
+Verifying View Bulk Customer Transfer page displayed with header : View Bulk Customer Transfer Request<br/>
+Verifying Total customer count : 2<br/>
+Verifying added customer should be displayed on View BCT screen, Customer name is : 17390500<br/>
+Verifying added customer should be displayed on View BCT screen, Customer name is : 00357709<br/>
+Verifying searched transfer request should be matched with Raised Customer Transfer Request ID : 295<br/>
+Verifying status of transfer request is should be Complete<br/>
+By default Search Customer page is displayed<br/>
+Verifying after succesfully bulk customer transfer, updated territiry should be displayed for selected customer and updated territory is 0170<br/>
+</div>
+</td>
+<td></td>
+<td>75</td>
+<td>testscripts.cap.CAPSetupBulkCustomerTransferScripts@27808f31</td></tr>
+</table><p>
+</body>
+</html>
